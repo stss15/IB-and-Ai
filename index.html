@@ -371,12 +371,41 @@
     }
 
     /* Footer */
-    .footer {
-      background-color: var(--primary);
-      color: var(--light);
-      padding: 2rem 0;
+    <!-- Footer Styles -->
+      .footer-links {
+      margin-top: 1.5rem;
+    }
+    .footer-links h4 {
+      font-size: 1.2rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      justify-items: center;
       text-align: center;
-      margin-top: 2rem;
+    }
+    .footer-grid a {
+      display: flex;
+      align-items: center;
+      background: var(--light);
+      padding: 0.8rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--boxshadow);
+      transition: var(--transition);
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .footer-grid a:hover {
+      background: var(--gray);
+      transform: translateY(-3px);
+    }
+    .footer-grid i {
+      margin-right: 8px;
+      color: var(--secondary);
     }
   </style>
 </head>
@@ -763,12 +792,49 @@
   </div><!-- /.blog-content -->
 
   <!-- Footer -->
-  <div class="footer">
-    <div class="container">
-      <p>St. George's School | International Baccalaureate Programme</p>
-      <p>© 2025 St. George's School Düsseldorf</p>
+<div class="footer">
+  <div class="container">
+    <p>IB and AI: A Hands-on Guide for Students</p>
+    <p>© 2025 Mr Stewart | Head of Science</p>
+    
+    <!-- Useful Resources -->
+    <div class="footer-links">
+      <h4>Referenced Documents</h4>
+      <div class="footer-grid">
+        <a href="https://www.ibo.org/programmes/artificial-intelligence-ai-in-learning-teaching-and-assessment/" target="_blank">
+          <i class="fas fa-book"></i> AI in Learning & Assessment
+        </a>
+        <a href="https://www.ibo.org/globalassets/new-structure/programmes/shared-resources/pdfs/academic-integrity-policy-en.pdf" target="_blank">
+          <i class="fas fa-shield-alt"></i> IB Academic Integrity Policy
+        </a>
+        <a href="https://www.ibo.org/globalassets/new-structure/programmes/shared-resources/pdfs/tok-activity-using-ai-generated-content-as-a-tok-object-en.pdf" target="_blank">
+          <i class="fas fa-brain"></i> AI as a TOK Object
+        </a>
+        <a href="https://www.ibo.org/globalassets/new-structure/programmes/shared-resources/pdfs/tok-activity-interactive-feedback-exercise-en.pdf" target="_blank">
+          <i class="fas fa-comments"></i> TOK Interactive Feedback Exercise
+        </a>
+        <a href="https://www.ibo.org/globalassets/new-structure/programmes/shared-resources/pdfs/artificial-intelligence-questions-and-concerns-en.pdf" target="_blank">
+          <i class="fas fa-question-circle"></i> AI: Questions & Concerns
+        </a>
+        <a href="https://blogs.ibo.org/2023/02/27/artificial-intelligence-ai-in-ib-assessment-and-education-a-crisis-or-an-opportunity/" target="_blank">
+          <i class="fas fa-blog"></i> AI in IB Education: Crisis or Opportunity?
+        </a>
+        <a href="https://vimeo.com/832697565?share=copy" target="_blank">
+          <i class="fas fa-video"></i> IB AI Webinar - Part 1
+        </a>
+        <a href="https://vimeo.com/832700884?share=copy" target="_blank">
+          <i class="fas fa-video"></i> IB AI Webinar - Part 2
+        </a>
+        <a href="https://vimeo.com/832701269?share=copy" target="_blank">
+          <i class="fas fa-video"></i> IB AI Webinar - Part 3
+        </a>
+        <a href="https://sgs-dashboard.info/Policies/Internal%20Policy%20Documents/Artificial_Intelligence.pdf" target="_blank">
+          <i class="fas fa-file-alt"></i> SGS AI Policy
+        </a>
+      </div>
     </div>
   </div>
+</div>
 
   <!-- Back to top button -->
   <div class="back-to-top" id="backToTopBtn">
