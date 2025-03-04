@@ -371,42 +371,58 @@
     }
 
     /* Footer */
-    <!-- Footer Styles -->
-      .footer-links {
-      margin-top: 1.5rem;
-    }
-    .footer-links h4 {
-      font-size: 1.2rem;
-      color: var(--secondary);
-      margin-bottom: 1rem;
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      justify-items: center;
-      text-align: center;
-    }
-    .footer-grid a {
-      display: flex;
-      align-items: center;
-      background: var(--light);
-      padding: 0.8rem;
-      border-radius: var(--border-radius);
-      box-shadow: var(--boxshadow);
-      transition: var(--transition);
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: 500;
-    }
-    .footer-grid a:hover {
-      background: var(--gray);
-      transform: translateY(-3px);
-    }
-    .footer-grid i {
-      margin-right: 8px;
-      color: var(--secondary);
-    }
+  .footer-links {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .footer-links h4 {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+  }
+  .footer-grid a {
+    display: flex;
+    align-items: center;
+    background: var(--light);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--boxshadow);
+    transition: var(--transition);
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    justify-content: center;
+    min-width: 250px;
+  }
+  .footer-grid a:hover {
+    background: var(--gray);
+    transform: translateY(-3px);
+  }
+  .footer-grid i {
+    margin-right: 10px;
+    color: var(--secondary);
+  }
+
+  .footer-bar {
+    background-color: var(--primary);
+    color: var(--light);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+  }
+  .footer-bar p {
+    margin: 0.2rem 0;
+  }
   </style>
 </head>
 <body>
@@ -791,7 +807,7 @@
 
   </div><!-- /.blog-content -->
 
-  <!-- Footer -->
+<!-- Footer -->
 <div class="footer">
   <div class="container">
     <p>IB and AI: A Hands-on Guide for Students</p>
@@ -834,6 +850,12 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- Dark Blue Footer Bar -->
+<div class="footer-bar">
+  <p>Practical AI Guide for IB Students</p>
+  <p>© 2025 Mr Stewart | Head of Science </p>
 </div>
 
   <!-- Back to top button -->
